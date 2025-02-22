@@ -152,15 +152,6 @@ class WQSIntro(Scene):
         
         #WQS*Beta
         self.play(wqsgroup.animate.to_corner(DOWN + LEFT, buff=1.5))
-        # wqsvec = Matrix(newmat).to_corner(DOWN + LEFT, buff=1.5)
-        # wqsvec.set_column_colors(PURPLE)
-        # self.play(Create(wqsvec, run_time=0.5))
-        # row2text_r = Text('P2', font_size=20).next_to(wqsvec, LEFT, buff=0.1)
-        # row1text_r = Text('P1', font_size=20).next_to(row2text_r, UP, buff=0.5)
-        # row3text_r = Text('P3', font_size=20).next_to(row2text_r, DOWN, buff=0.5)
-        # wqsname_r = MathTex("WQS").next_to(wqsvec, UP, buff=0.5)
-        # self.play(Create(row1text_r, run_time=0.5), Create(row2text_r, run_time=0.5), 
-        #           Create(row3text_r, run_time=0.5), Create(wqsname_r, run_time=0.5))
         self.wait(1)
         
         #Explain beta1/beta0
